@@ -1,0 +1,53 @@
+---
+title: "MPG Prediction App"
+author: "Riya"
+date: "November 2024"
+output:  
+  ioslides_presentation:
+    self_contained: true
+---
+
+## Introduction
+This presentation is the Course Project of the Developing Data Products course on Coursera.  
+It is an R Presentation generated with RStudio.  
+The Shiny application is available at [MPG Prediction App](https://riya13.shinyapps.io/mpg_prediction_app/).  
+The Shiny app source code is available at [GitHub Repository](https://github.com/sleepycherry13/MPG_Prediction_App).
+---
+
+## Overview
+The application is written in Shiny, a web application framework for R.  
+The source code consists of a single file: `app.R`, which includes both the UI and server logic.  
+The application is hosted on RStudio’s shiny server.  
+The goal is to provide a user-friendly interface to predict miles per gallon (MPG) based on horsepower and weight.
+---
+
+## How the App Works
+### Side Panel
+- **Horsepower Slider**: Select horsepower (range from 50 to 300).
+- **Weight Slider**: Select weight (range from 1 to 6 in thousands of lbs).
+### Main Panel
+- Displays the predicted MPG based on user input.
+---
+
+## Try the App
+You can access the Shiny app at [MPG Prediction App](https://riya13.shinyapps.io/mpg_prediction_app/).  
+Users can enter different values for horsepower and weight, and observe how the predicted MPG changes in real-time.
+
+### Example Prediction
+```{r, echo=FALSE}
+# Example code for prediction
+hp <- 150
+wt <- 3
+mpg <- 37 - (0.05 * hp) - (3 * wt)
+mpg  # Display calculated MPG
+```
+## Conclusion
+The MPG Prediction App demonstrates the effectiveness of R and Shiny in creating interactive tools for predicting miles per gallon based on horsepower and weight.
+
+Users can easily adjust input values and see real-time predictions, highlighting the app's user-friendly design.
+For further exploration, access the app at MPG Prediction App and the source code on GitHub Repository.
+---
+
+## Thank You!
+  
+
